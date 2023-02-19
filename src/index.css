@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body{
+  background-color: #FFA07A;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+.App{
+  background-color: white;
+  padding: 2rems;
+  border-radius: 10px;
+  box-shadow:  3px 3px 5px rgb(0.5, 0, 0);
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.Box h1{
+  margin-top: 0;
+  color: #CD5C5C;
+  font-weight: 700;
+}
+
+.Box p{
+  margin: 2rem;
+}
+
+.Box Button{
+  background-color: #FA8072;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow:none;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  border:#CD5C5C;
+
+}
+
+.Box button:active{
+  transform: scale(0.95);
+}
+
+
+.Nav{
+  top:0;
+} 
+
+a{
+  color: #CD5C5C;
+  font-weight: 800;
+}
+
+a:hover{
+  color:#A53434;
+}
