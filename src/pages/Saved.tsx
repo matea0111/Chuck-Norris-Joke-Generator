@@ -7,8 +7,8 @@ const SavedJokes: React.FC = () => {
 
 
     useEffect(() => {
-        var jokes = JSON.parse(localStorage.getItem('items')!); 
-        var jokeList: JSX.Element[]=[];
+        const jokes = JSON.parse(localStorage.getItem('items')!); 
+        const jokeList= [{}];
     
             if(!jokes){
                 setItems([]);
@@ -17,14 +17,15 @@ const SavedJokes: React.FC = () => {
             );
             
             jokes.forEach((joke:any) => {
-                jokeList.push(<h3>{joke.value}</h3>)
+                jokeList.push(joke.value)
+                setJokeList(joke.value)
               })
-              console.log(typeof jokeList);
-      },[]);
+              console.log(jokeList);
+      },[list]);
 
     return (
         <div>
-            {items}
+            {list}
         </div>
     );
 };
